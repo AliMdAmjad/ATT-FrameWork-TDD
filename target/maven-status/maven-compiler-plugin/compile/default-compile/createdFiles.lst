@@ -1,0 +1,5 @@
+com\att\qa\objects\HomePages.class
+com\att\qa\base\BaseClass.class
+com\att\qa\utils\Configuration.class
+com\att\qa\common\Commons.class
+com\att\qa\reporting\Loggers.class
