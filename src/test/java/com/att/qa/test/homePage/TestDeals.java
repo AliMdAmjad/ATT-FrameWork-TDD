@@ -7,7 +7,7 @@ public class TestDeals extends BaseClass {
 
 	@Test
 	public void attDeals() {
-		hp.selectDeals(ca);
+		hp.selectDevice(ca);
 
 	}
 }

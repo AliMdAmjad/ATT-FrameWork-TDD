@@ -13,12 +13,13 @@ public class HomePage {
 
 	}
 
-	@FindBy(xpath ="(//span[text()='Deals'])[1]")
-	WebElement dealsElement;
+	@FindBy(xpath = "//span[text()='Phones & devices']")
+	WebElement deviceElement;
 
-	public void selectDeals(Commons ca) {
-		ca.click(dealsElement);
+	public void selectDevice(Commons ca) {
+		ca.click(deviceElement);
 
 	}
+	
 
 }
