@@ -24,6 +24,7 @@ public class BaseClass {
 	@BeforeMethod
 	public void setUp() {
 		driver = localDriver("chrome");
+		driver.manage().window().maximize();
 		driver.get(configuration.getConfiguration("url"));
 		driver.manage().timeouts()
 				.pageLoadTimeout(Duration.ofSeconds(Integer.parseInt(configuration.getConfiguration("pageloadWait"))));
@@ -58,7 +59,8 @@ public class BaseClass {
 	}
 
 	@AfterMethod
-	public void terminate() {
+	public void terminate() throws InterruptedException {
+		Thread.sleep(4000);
 		driver.quit();
 	}
 

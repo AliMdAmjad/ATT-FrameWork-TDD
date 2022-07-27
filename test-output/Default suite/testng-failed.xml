@@ -6,8 +6,8 @@
       <class name="com.att.qa.test.homePage.TestDeals">
         <methods>
           <include name="terminate"/>
-          <include name="attDeals"/>
           <include name="setUp"/>
+          <include name="searchBox"/>
         </methods>
       </class> <!-- com.att.qa.test.homePage.TestDeals -->
     </classes>

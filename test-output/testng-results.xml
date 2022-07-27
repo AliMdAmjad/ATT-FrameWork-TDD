@@ -2,26 +2,68 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (6ed42ddf2abc7e453091ea862fda0905)] -> xpath: //span[text()='Phones & devices']]  : ----> This element has been clicked<br>]]>
+      <![CDATA[iPhone 13 pro max : This values has been passed into ---> [[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: //input[@id='z1-searchfield']]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: (//span[@class='att-search-highlight'])[1]' ---> This element has been clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: //input[@id='Silver']] ---> This element has been clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: (//div[@class='jsx-3595842764 flex full-width font-regular type-base color-ui-black  mar-b-none'])[1]] ---> This element has been clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: (//div[@class='jsx-3086675332 radio-button-skin line-h-md  btn flex btn-full-width flex-column pad-xs pad-xs'])[6]] ---> This element has been clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: //button[@class='btn btn-primary-2 false bg-functional-blue color-ui-white btn-large btn-full-width']] ---> This element has been clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: (//button[@class='btn  false btn-secondary btn-small btn-full-width JBIsG pad-l-xs pad-r-xs pad-t-none pad-b-none'])[1]] ---> This element has been clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: //button[@value='nonMixAndMatch']] ---> This element has been clicked<br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-07-27T00:16:04 EDT" name="Default suite" finished-at="2022-07-27T00:16:32 EDT" duration-ms="28250">
+  <suite started-at="2022-07-27T17:46:58 EDT" name="Default suite" finished-at="2022-07-27T17:47:57 EDT" duration-ms="58521">
     <groups>
     </groups>
-    <test started-at="2022-07-27T00:16:04 EDT" name="Default test" finished-at="2022-07-27T00:16:32 EDT" duration-ms="28250">
+    <test started-at="2022-07-27T17:46:58 EDT" name="Default test" finished-at="2022-07-27T17:47:57 EDT" duration-ms="58521">
       <class name="com.att.qa.test.homePage.TestDeals">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.att.qa.test.homePage.TestDeals@1a4013]" started-at="2022-07-27T00:16:04 EDT" name="setUp" finished-at="2022-07-27T00:16:22 EDT" duration-ms="18342" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.att.qa.test.homePage.TestDeals@1a4013]" started-at="2022-07-27T17:46:58 EDT" name="setUp" finished-at="2022-07-27T17:47:13 EDT" duration-ms="14473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="attDeals()[pri:0, instance:com.att.qa.test.homePage.TestDeals@1a4013]" started-at="2022-07-27T00:16:22 EDT" name="attDeals" finished-at="2022-07-27T00:16:31 EDT" duration-ms="8212" status="PASS">
+        <test-method signature="searchBox()[pri:0, instance:com.att.qa.test.homePage.TestDeals@1a4013]" started-at="2022-07-27T17:47:13 EDT" name="searchBox" finished-at="2022-07-27T17:47:52 EDT" duration-ms="38981" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (6ed42ddf2abc7e453091ea862fda0905)] -> xpath: //span[text()='Phones & devices']]  : ----> This element has been clicked<br>]]>
+              <![CDATA[iPhone 13 pro max : This values has been passed into ---> [[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: //input[@id='z1-searchfield']]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: (//span[@class='att-search-highlight'])[1]' ---> This element has been clicked<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: //input[@id='Silver']] ---> This element has been clicked<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: (//div[@class='jsx-3595842764 flex full-width font-regular type-base color-ui-black  mar-b-none'])[1]] ---> This element has been clicked<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: (//div[@class='jsx-3086675332 radio-button-skin line-h-md  btn flex btn-full-width flex-column pad-xs pad-xs'])[6]] ---> This element has been clicked<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: //button[@class='btn btn-primary-2 false bg-functional-blue color-ui-white btn-large btn-full-width']] ---> This element has been clicked<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: (//button[@class='btn  false btn-secondary btn-small btn-full-width JBIsG pad-l-xs pad-r-xs pad-t-none pad-b-none'])[1]] ---> This element has been clicked<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (ccd8d37aa707280555ff1f93d371d2aa)] -> xpath: //button[@value='nonMixAndMatch']] ---> This element has been clicked<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- attDeals -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:com.att.qa.test.homePage.TestDeals@1a4013]" started-at="2022-07-27T00:16:31 EDT" name="terminate" finished-at="2022-07-27T00:16:32 EDT" duration-ms="1572" status="PASS">
+        </test-method> <!-- searchBox -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.att.qa.test.homePage.TestDeals@1a4013]" started-at="2022-07-27T17:47:52 EDT" name="terminate" finished-at="2022-07-27T17:47:57 EDT" duration-ms="4992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
