@@ -5,9 +5,9 @@
     <classes>
       <class name="com.att.qa.test.homePage.TestDeals">
         <methods>
+          <include name="buyIphone13"/>
           <include name="terminate"/>
           <include name="setUp"/>
-          <include name="searchBox"/>
         </methods>
       </class> <!-- com.att.qa.test.homePage.TestDeals -->
     </classes>

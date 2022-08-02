@@ -14,6 +14,7 @@ import com.att.qa.utils.Configuration;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
+	
 	public Configuration configuration = new Configuration(null);
 
 	WebDriver driver;
@@ -60,8 +61,8 @@ public class BaseClass {
 
 	@AfterMethod
 	public void terminate() throws InterruptedException {
-		Thread.sleep(4000);
-		driver.quit();
+		Thread.sleep(6000);
+		//driver.quit();
 	}
 
 }

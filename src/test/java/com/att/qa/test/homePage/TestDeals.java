@@ -6,7 +6,7 @@ import com.att.qa.base.BaseClass;
 public class TestDeals extends BaseClass {
 
 	@Test
-	public void searchBox() {
+	public void buyIphone13() {
 		hp.searchField(ca);
 		hp.clickMagnifier(ca);
 		hp.chooseColor(ca);
@@ -15,6 +15,10 @@ public class TestDeals extends BaseClass {
 		hp.clickingContinue(ca);
 		hp.newCustomerButton(ca);
 		hp.choosePlan(ca);
+		hp.selectAttPlan(ca);
+		hp.continueButton2(ca);
+		
+		
 
 	}
 }
