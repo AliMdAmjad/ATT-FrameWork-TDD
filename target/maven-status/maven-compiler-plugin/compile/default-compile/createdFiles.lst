@@ -1,6 +1,0 @@
-com\att\qa\common\CommonWaits.class
-com\att\qa\objects\HomePage.class
-com\att\qa\base\BaseClass.class
-com\att\qa\utils\Configuration.class
-com\att\qa\common\CommonFunction.class
-com\att\qa\reporting\Loggers.class
