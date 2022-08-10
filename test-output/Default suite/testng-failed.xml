@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.att.qa.test.homePage.TestDeals">
+      <class name="com.att.qa.test.homePage.TestClass">
         <methods>
-          <include name="buyIphone13"/>
           <include name="terminate"/>
           <include name="setUp"/>
+          <include name="buyIphone13"/>
         </methods>
-      </class> <!-- com.att.qa.test.homePage.TestDeals -->
+      </class> <!-- com.att.qa.test.homePage.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

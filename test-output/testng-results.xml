@@ -2,67 +2,44 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[iPhone 13 pro max : This values has been passed into ---> [[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //input[@id='z1-searchfield']]<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (7ad0b77715576abca36a2f9252252d0d)] -> xpath: //input[@id='z1-searchfield']] ---> This element has been clicked<br>]]>
     </line>
     <line>
-      <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: (//span[@class='att-search-highlight'])[1]' ---> This element has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //input[@id='Silver']] ---> This element has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: (//div[@class='jsx-3595842764 flex full-width font-regular type-base color-ui-black  mar-b-none'])[1]] ---> This element has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: (//div[@class='jsx-3086675332 radio-button-skin line-h-md  btn flex btn-full-width flex-column pad-xs pad-xs'])[6]] ---> This element has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //button[@class='btn btn-primary-2 false bg-functional-blue color-ui-white btn-large btn-full-width']] ---> This element has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: (//button[@class='btn  false btn-secondary btn-small btn-full-width JBIsG pad-l-xs pad-r-xs pad-t-none pad-b-none'])      [1]] ---> This element has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //button[@value='nonMixAndMatch']] ---> This element has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //div[@class='jsx-3595842764 flex full-width font-regular type-base color-ui-black  mar-b-none']] ---> This element has been clicked<br>]]>
+      <![CDATA[iphone 13 pro max : This values has been passed into ---> [[ChromeDriver: chrome on WINDOWS (7ad0b77715576abca36a2f9252252d0d)] -> xpath: //input[@id='z1-searchfield']]<br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-08-02T14:21:16 EDT" name="Default suite" finished-at="2022-08-02T14:22:02 EDT" duration-ms="46320">
+  <suite started-at="2022-08-07T20:16:31 EDT" name="Suite" finished-at="2022-08-07T20:17:03 EDT" duration-ms="31333">
     <groups>
     </groups>
-    <test started-at="2022-08-02T14:21:16 EDT" name="Default test" finished-at="2022-08-02T14:22:02 EDT" duration-ms="46320">
-      <class name="com.att.qa.test.homePage.TestDeals">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.att.qa.test.homePage.TestDeals@1a4013]" started-at="2022-08-02T14:21:16 EDT" name="setUp" finished-at="2022-08-02T14:21:24 EDT" duration-ms="8237" status="PASS">
+    <test started-at="2022-08-07T20:16:31 EDT" name="Test" finished-at="2022-08-07T20:17:03 EDT" duration-ms="31333">
+      <class name="com.att.qa.test.homePage.TestClass">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.att.qa.test.homePage.TestClass@1cbb87f3]" started-at="2022-08-07T20:16:31 EDT" name="setUp" finished-at="2022-08-07T20:16:38 EDT" duration-ms="6526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="buyIphone13()[pri:0, instance:com.att.qa.test.homePage.TestDeals@1a4013]" started-at="2022-08-02T14:21:24 EDT" name="buyIphone13" finished-at="2022-08-02T14:21:56 EDT" duration-ms="32009" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="buyIphone13()[pri:0, instance:com.att.qa.test.homePage.TestClass@1cbb87f3]" started-at="2022-08-07T20:16:38 EDT" name="buyIphone13" finished-at="2022-08-07T20:16:56 EDT" duration-ms="18202" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='gn-search-btn search-active-mobile undefined']"}
   (Session info: chrome=103.0.5060.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'SOHAIL-NYC', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'SOHAIL-NYC', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e79e06269e5df02267a943e750328a16, clickElement {id=743b0000-ea1e-4a3d-8d13-b995a51bd92d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ali_2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54561}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54561/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //button[@class='btn btn-primary-2 false btn-large btn-full-width bg-functional-blue color-ui-white']]
-Session ID: e79e06269e5df02267a943e750328a16]]>
+Command: [7ad0b77715576abca36a2f9252252d0d, findElement {using=xpath, value=//button[@class='gn-search-btn search-active-mobile undefined']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ali_2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53895/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ad0b77715576abca36a2f9252252d0d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='gn-search-btn search-active-mobile undefined']"}
   (Session info: chrome=103.0.5060.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'SOHAIL-NYC', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'SOHAIL-NYC', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e79e06269e5df02267a943e750328a16, clickElement {id=743b0000-ea1e-4a3d-8d13-b995a51bd92d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ali_2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54561}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54561/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //button[@class='btn btn-primary-2 false btn-large btn-full-width bg-functional-blue color-ui-white']]
-Session ID: e79e06269e5df02267a943e750328a16
+Command: [7ad0b77715576abca36a2f9252252d0d, findElement {using=xpath, value=//button[@class='gn-search-btn search-active-mobile undefined']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ali_2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53895/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ad0b77715576abca36a2f9252252d0d
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -75,17 +52,17 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at com.att.qa.common.Commons.click(Commons.java:25)
-at com.att.qa.objects.HomePage.continueButton2(HomePage.java:95)
-at com.att.qa.test.homePage.TestDeals.buyIphone13(TestDeals.java:19)
+at com.att.qa.common.CommonFunction.click(CommonFunction.java:35)
+at com.att.qa.objects.HomePage.clickMagnifier(HomePage.java:63)
+at com.att.qa.objects.HomePage.homepageSteps(HomePage.java:105)
+at com.att.qa.test.homePage.TestClass.buyIphone13(TestClass.java:10)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,42 +93,21 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[iPhone 13 pro max : This values has been passed into ---> [[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //input[@id='z1-searchfield']]<br>]]>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (7ad0b77715576abca36a2f9252252d0d)] -> xpath: //input[@id='z1-searchfield']] ---> This element has been clicked<br>]]>
             </line>
             <line>
-              <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: (//span[@class='att-search-highlight'])[1]' ---> This element has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //input[@id='Silver']] ---> This element has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: (//div[@class='jsx-3595842764 flex full-width font-regular type-base color-ui-black  mar-b-none'])[1]] ---> This element has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: (//div[@class='jsx-3086675332 radio-button-skin line-h-md  btn flex btn-full-width flex-column pad-xs pad-xs'])[6]] ---> This element has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //button[@class='btn btn-primary-2 false bg-functional-blue color-ui-white btn-large btn-full-width']] ---> This element has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: (//button[@class='btn  false btn-secondary btn-small btn-full-width JBIsG pad-l-xs pad-r-xs pad-t-none pad-b-none'])      [1]] ---> This element has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //button[@value='nonMixAndMatch']] ---> This element has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (e79e06269e5df02267a943e750328a16)] -> xpath: //div[@class='jsx-3595842764 flex full-width font-regular type-base color-ui-black  mar-b-none']] ---> This element has been clicked<br>]]>
+              <![CDATA[iphone 13 pro max : This values has been passed into ---> [[ChromeDriver: chrome on WINDOWS (7ad0b77715576abca36a2f9252252d0d)] -> xpath: //input[@id='z1-searchfield']]<br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- buyIphone13 -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:com.att.qa.test.homePage.TestDeals@1a4013]" started-at="2022-08-02T14:21:56 EDT" name="terminate" finished-at="2022-08-02T14:22:02 EDT" duration-ms="6006" status="PASS">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.att.qa.test.homePage.TestClass@1cbb87f3]" started-at="2022-08-07T20:16:56 EDT" name="terminate" finished-at="2022-08-07T20:17:03 EDT" duration-ms="6513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-      </class> <!-- com.att.qa.test.homePage.TestDeals -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.att.qa.test.homePage.TestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

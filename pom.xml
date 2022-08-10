@@ -9,6 +9,7 @@
 	<properties>
 		<compilerVersion>1.8</compilerVersion>
 	</properties>
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -30,6 +31,7 @@
 		</dependency>
 
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>

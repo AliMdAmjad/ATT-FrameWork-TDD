@@ -8,19 +8,20 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import com.att.qa.common.Commons;
+import com.att.qa.common.CommonFunction;
 import com.att.qa.objects.HomePage;
 import com.att.qa.utils.Configuration;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-	
+
 	public Configuration configuration = new Configuration(null);
 
 	WebDriver driver;
+	
 
-	protected HomePage hp;
-	protected Commons ca;
+	protected CommonFunction commons;
+	protected HomePage homepage;
 
 	@BeforeMethod
 	public void setUp() {
@@ -50,8 +51,8 @@ public class BaseClass {
 	}
 
 	public void initialization() {
-		hp = new HomePage(driver);
-		ca = new Commons();
+		commons = new CommonFunction(driver);
+		homepage = new HomePage(driver, commons);
 
 	}
 
@@ -62,7 +63,7 @@ public class BaseClass {
 	@AfterMethod
 	public void terminate() throws InterruptedException {
 		Thread.sleep(6000);
-		//driver.quit();
+		driver.quit();
 	}
 
 }

@@ -5,19 +5,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.att.qa.common.Commons;
+import com.att.qa.common.CommonFunction;
 
 public class HomePage {
-	public HomePage(WebDriver driver) {
+
+	CommonFunction commons;
+
+	public HomePage(WebDriver driver, CommonFunction commons) {
 		PageFactory.initElements(driver, this);
+		this.commons = commons;
 
 	}
 
 	@FindBy(xpath = "//input[@id='z1-searchfield']")
 	WebElement searchElement;
 
-	@FindBy(xpath = "(//span[@class='att-search-highlight'])[1]")
+	@FindBy(xpath = "//button[@class='gn-search-btn search-active-mobile undefined']")
 	WebElement clickingSearch;
+
+	@FindBy(xpath = "//button[@class='_1zYaL btn-large btn-primary btn-arrow']")
+	WebElement shopNoWebElement;
 
 	@FindBy(xpath = "//input[@id='Silver']")
 	WebElement colorSelectElement;
@@ -43,45 +50,69 @@ public class HomePage {
 	@FindBy(xpath = "//button[@class='btn btn-primary-2 false btn-large btn-full-width bg-functional-blue color-ui-white']")
 	WebElement continuElement;
 
-	public void searchField(Commons ca) {
-		ca.inputValues(searchElement, "iPhone 13 pro max");
+	public void clickSearch() {
+		commons.click(searchElement);
+	}
+	
+	public void searchField(String value) {
+		commons.inputValues(searchElement, value);
 
 	}
 
-	public void clickMagnifier(Commons ca) {
-		ca.click(clickingSearch);
+	public void clickMagnifier() {
+		commons.click(clickingSearch);
 	}
 
-	public void chooseColor(Commons ca) {
-		ca.click(colorSelectElement);
+	public void clickShopNow() {
+		commons.click(shopNoWebElement);
 	}
 
-	public void selectCapacity(Commons ca) {
-		ca.click(capacityElement);
+	public void chooseColor() {
+		commons.click(colorSelectElement);
 	}
 
-	public void selectPrice(Commons ca) {
-		ca.click(priceOption);
+	public void selectCapacity() {
+		commons.click(capacityElement);
 	}
 
-	public void clickingContinue(Commons ca) {
-		ca.click(continueButtonElement);
+	public void selectPrice() {
+		commons.click(priceOption);
 	}
 
-	public void newCustomerButton(Commons ca) {
-		ca.click(newCustomerElement);
+	public void clickingContinue() {
+		commons.click(continueButtonElement);
 	}
 
-	public void choosePlan(Commons ca) {
-		ca.click(otherPlanElement);
+	public void newCustomerButton() {
+		commons.click(newCustomerElement);
 	}
 
-	public void selectAttPlan(Commons ca) {
-		ca.click(selectPlanElement);
+	public void choosePlan() {
+		commons.click(otherPlanElement);
 	}
 
-	public void continueButton2(Commons ca) {
-		ca.click(continuElement);
+	public void selectAttPlan() {
+		commons.click(selectPlanElement);
+	}
+
+	public void continueButton2() {
+		commons.click(continuElement);
+	}
+
+	public void homepageSteps(String value) {
+		clickSearch();
+		searchField(value);
+		clickMagnifier();
+		clickShopNow();
+		chooseColor();
+		selectCapacity();
+		selectPrice();
+		clickingContinue();
+		newCustomerButton();
+		choosePlan();
+		selectAttPlan();
+		continueButton2();
+
 	}
 
 }
