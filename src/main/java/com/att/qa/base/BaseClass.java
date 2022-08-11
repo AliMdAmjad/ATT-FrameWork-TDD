@@ -61,9 +61,9 @@ public class BaseClass {
 	}
 
 	@AfterMethod
-	public void terminate() throws InterruptedException {
-		Thread.sleep(6000);
-		driver.quit();
+	public void terminate() {
+	
+		//driver.quit();
 	}
 
 }

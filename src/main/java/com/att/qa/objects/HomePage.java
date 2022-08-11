@@ -20,7 +20,7 @@ public class HomePage {
 	@FindBy(xpath = "//input[@id='z1-searchfield']")
 	WebElement searchElement;
 
-	@FindBy(xpath = "//button[@class='gn-search-btn search-active-mobile undefined']")
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement clickingSearch;
 
 	@FindBy(xpath = "//button[@class='_1zYaL btn-large btn-primary btn-arrow']")
@@ -32,7 +32,7 @@ public class HomePage {
 	@FindBy(xpath = "(//div[@class='jsx-3595842764 flex full-width font-regular type-base color-ui-black  mar-b-none'])[1]")
 	WebElement capacityElement;
 
-	@FindBy(xpath = "(//div[@class='jsx-3086675332 radio-button-skin line-h-md  btn flex btn-full-width flex-column pad-xs pad-xs'])[6]")
+	@FindBy(xpath = "//div[text()='Full retail price']")
 	WebElement priceOption;
 
 	@FindBy(xpath = "//button[@class='btn btn-primary-2 false bg-functional-blue color-ui-white btn-large btn-full-width']")
@@ -44,16 +44,15 @@ public class HomePage {
 	@FindBy(xpath = "//button[@value='nonMixAndMatch']")
 	WebElement otherPlanElement;
 
-	@FindBy(xpath = "//div[@class='jsx-3595842764 flex full-width font-regular type-base color-ui-black  mar-b-none']")
+	@FindBy(xpath = "//body[@class='bg-ui-background-gray attgn-page']")
 	WebElement selectPlanElement;
 
 	@FindBy(xpath = "//button[@class='btn btn-primary-2 false btn-large btn-full-width bg-functional-blue color-ui-white']")
-	WebElement continuElement;
+	WebElement continu1Element;
 
-	public void clickSearch() {
-		commons.click(searchElement);
-	}
-	
+	@FindBy(xpath = "//button[text()='Go to cart']")
+	WebElement goToCartElement;
+
 	public void searchField(String value) {
 		commons.inputValues(searchElement, value);
 
@@ -96,11 +95,15 @@ public class HomePage {
 	}
 
 	public void continueButton2() {
-		commons.click(continuElement);
+		commons.click(continu1Element);
+	}
+
+	public void cartButton() {
+		commons.click(goToCartElement);
 	}
 
 	public void homepageSteps(String value) {
-		clickSearch();
+
 		searchField(value);
 		clickMagnifier();
 		clickShopNow();
@@ -112,6 +115,7 @@ public class HomePage {
 		choosePlan();
 		selectAttPlan();
 		continueButton2();
+		cartButton();
 
 	}
 
