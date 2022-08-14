@@ -49,9 +49,14 @@ public class HomePage {
 
 	@FindBy(xpath = "//button[@class='btn btn-primary-2 false btn-large btn-full-width bg-functional-blue color-ui-white']")
 	WebElement continu1Element;
+	
+	@FindBy(xpath = "//span[text()='Device protection']")
+	WebElement withoutProtectionElement;
 
-	@FindBy(xpath = "//button[text()='Go to cart']")
+	@FindBy(xpath = "//button[@class='btn btn-primary-2 false btn-large btn-full-width bg-functional-blue color-ui-white']")
 	WebElement goToCartElement;
+
+	
 
 	public void searchField(String value) {
 		commons.inputValues(searchElement, value);
@@ -97,10 +102,16 @@ public class HomePage {
 	public void continueButton2() {
 		commons.click(continu1Element);
 	}
+	
+	public void protectionDecline() {
+		commons.click(withoutProtectionElement);
+	}
 
 	public void cartButton() {
 		commons.click(goToCartElement);
 	}
+
+	
 
 	public void homepageSteps(String value) {
 
@@ -115,7 +126,9 @@ public class HomePage {
 		choosePlan();
 		selectAttPlan();
 		continueButton2();
+		protectionDecline();
 		cartButton();
+		
 
 	}
 

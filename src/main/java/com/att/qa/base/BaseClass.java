@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import com.att.qa.common.CommonFunction;
 import com.att.qa.objects.HomePage;
+import com.att.qa.objects.InternetPage;
 import com.att.qa.utils.Configuration;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -18,10 +19,10 @@ public class BaseClass {
 	public Configuration configuration = new Configuration(null);
 
 	WebDriver driver;
-	
 
 	protected CommonFunction commons;
 	protected HomePage homepage;
+	protected InternetPage internetPage;
 
 	@BeforeMethod
 	public void setUp() {
@@ -62,8 +63,8 @@ public class BaseClass {
 
 	@AfterMethod
 	public void terminate() {
-	
-		//driver.quit();
+
+		driver.quit();
 	}
 
 }

@@ -8,6 +8,7 @@ public class TestClass extends BaseClass {
 	@Test
 	public void buyIphone13proMax() {
 		homepage.homepageSteps("iphone 13 pro max");
+		internetPage.internetPageSteps();
 
 	}
 }
