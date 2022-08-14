@@ -16,12 +16,19 @@ public class InternetPage {
 		this.commons = commons;
 	}
 	
-	@FindBy(xpath = "//a[@class='z1-tier1-links z1-link' and @title='Internet']")
+	@FindBy(xpath = "(//span[text()='Internet'])[1]")
 	WebElement clickinternetElement;
+	
+	@FindBy(className = "btn-primary-2 btn-arrow btn-large btn rel")
+	WebElement shopInternetElement;
 	
 	
 	public void internetMenu() {
 		commons.click(clickinternetElement);
+	}
+	
+	public void internetShopClick() {
+		commons.click(shopInternetElement);
 	}
 	
 	
@@ -30,7 +37,7 @@ public class InternetPage {
 	
 	public void internetPageSteps() {
 		internetMenu();
-		
+		internetShopClick();
 	}
 	
 	

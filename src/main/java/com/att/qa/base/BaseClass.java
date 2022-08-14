@@ -54,7 +54,7 @@ public class BaseClass {
 	public void initialization() {
 		commons = new CommonFunction(driver);
 		homepage = new HomePage(driver, commons);
-
+		internetPage = new InternetPage(driver, commons);
 	}
 
 	protected WebDriver getDriver() {
